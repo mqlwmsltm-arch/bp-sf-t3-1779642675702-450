@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="description" content="마포 성우이벤트 최상위 프리미엄 서비스. 강남 셔츠룸 시스템 도입, 365일 24시간 전문 매니저 상담. 방문 전 필수 정보 확인하세요.">
+    <meta name="keywords" content="마포 성우이벤트, 강남 셔츠룸, 마포 셔츠룸, 프리미엄 이벤트, 강남 시스템, 매니저, 성우서비스">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-450.vercel.app/">
+    <meta property="og:title" content="마포 성우이벤트 | 강남 셔츠룸 프리미엄 정보">
+    <meta property="og:description" content="마포 지역 강남 셔츠룸 시스템 기반 프리미엄 성우이벤트. 체계적인 매니징과 전문 서비스 상세 안내.">
+    <title>마포 성우이벤트 | 강남 셔츠룸 프리미엄 정보</title>
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #faf9f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #1d1d1f;
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.0625rem;
+            color: #515154;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #0071e3;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        /* Header & Nav */
+        .site-header {
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: #1d1d1f;
+        }
+        .logo span {
+            color: #86868b;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-list a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: #1d1d1f;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        .nav-list a:hover,
+        .nav-list a.active {
+            border-bottom-color: #0071e3;
+            color: #0071e3;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 4px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #1d1d1f;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #0071e3;
+            color: #fff;
+            padding: 0.625rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+        .tel-link:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-list {
+                display: none;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.98);
+                flex-direction: column;
+                padding: 1rem 0;
+                gap: 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            }
+            .nav-list.active {
+                display: flex;
+            }
+            .nav-list li {
+                text-align: center;
+                padding: 0.75rem 0;
+            }
+            .nav-list a {
+                border-bottom: none;
+                font-size: 1rem;
+            }
+            .tel-link {
+                font-size: 0.875rem;
+                padding: 0.5rem 1rem;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.625rem; }
+        }
+        /* Section Spacing */
+        .section {
+            padding: 5rem 0;
+        }
+        .section-light {
+            background-color: #ffffff;
+        }
+        .section-dark {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+        }
+        .section-dark h2,
+        .section-dark h3,
+        .section-dark p {
+            color: #f5f5f7;
+        }
+        /* Cards Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 18px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        .card p {
+            font-size: 0.9375rem;
+        }
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 1.25rem 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.125rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            margin-top: 0.75rem;
+            font-size: 0.9375rem;
+            color: #515154;
+            line-height: 1.7;
+        }
+        /* Footer */
+        .site-footer {
+            background-color: #1d1d1f;
+            color: #86868b;
+            padding: 3rem 0;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+        .site-footer a {
+            color: #a1a1a6;
+        }
+        .site-footer a:hover {
+            color: #ffffff;
+        }
+        /* Utility */
+        .text-center {
+            text-align: center;
+        }
+        .mt-2 {
+            margin-top: 2rem;
+        }
+        .mb-1 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">마포<span>성우이벤트</span></div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info" class="active">정보</a></li>
+                    <li><a href="/service">서비스</a></li>
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+            </nav>
+            <a href="tel:01012345678" class="tel-link">24시 상담</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section section-light">
+            <div class="container text-center">
+                <h1>강남 셔츠룸 시스템<br>마포 성우이벤트 정보</h1>
+                <p style="max-width: 700px; margin: 1rem auto 2rem;">마포 지역 유일, 강남 셔츠룸 프리미엄 서비스를 그대로 도입한 성우이벤트. 체계적인 시스템과 전문 매니저의 정확한 케어를 경험하세요.</p>
+                <a href="tel:01012345678" class="tel-link" style="font-size: 1.125rem; padding: 0.875rem 2rem;">지금 전화 문의</a>
+            </div>
+        </section>
+
+        <!-- 상세 정보 섹션 -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">왜 마포 성우이벤트인가?</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>강남 셔츠룸 시스템</h3>
+                        <p>강남에서 검증된 셔츠룸 운영 노하우와 성우 매니징 시스템을 마포에 최초 도입. 3년간 2,000건 이상의 서비스 데이터 기반.</p>
+                    </div>
+                    <div class="card">
+                        <h3>전문 매니저 상주</h3>
+                        <p>365일 24시간, 전문 교육을 이수한 매니저가 상주하여 고객 맞춤형 케어 제공. 고객 만족도 98.2% (2024년 자체 조사).</p>
+                    </div>
+                    <div class="card">
+                        <h3>프리미엄 프라이빗 공간</h3>
+                        <p>마포 지역 5성급 호텔 수준의 인테리어와 방음 시설. 완벽한 프라이버시 보장, VIP 전용 라운지 운영.</p>
+                    </div>
+                    <div class="card">
+                        <h3>데이터 기반 서비스</h3>
+                        <p>매월 업데이트되는 성우 프로필과 고객 선호도 분석 시스템. 정확한 매칭률 94% 달성.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 상세 데이터 섹션 -->
+        <section class="section section-dark">
+            <div class="container">
+                <h2 class="text-center">서비스 운영 데이터</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem; text-align: center;">
+                    <div>
+                        <p style="font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">3,200+</p>
+                        <p style="color: #a1a1a6;">누적 방문 고객</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">98.2%</p>
+                        <p style="color: #a1a1a6;">고객 만족도</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">150+</p>
+                        <p style="color: #a1a1a6;">보유 성우</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">24/7</p>
+                        <p style="color: #a1a1a6;">운영 시간</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ 섹션 -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">자주 묻는 질문</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">강남 셔츠룸과 마포는 어떤 차이가 있나요?</div>
+                        <div class="faq-answer">핵심 시스템과 서비스 품질은 동일합니다. 마포 지점은 접근성과 프라이빗 공간에 특화되어 있으며, 강남 대비 15% 이상 합리적인 가격대를 제공합니다.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">성우 매칭은 어떻게 이루어지나요?</div>
+                        <div class="faq-answer">고객님의 선호도, 시간, 스타일을 사전 상담을 통해 분석한 후 데이터 기반으로 최적의 성우를 매칭합니다. 평균 매칭 시간 15분 이내.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">예약은 어떻게 하나요?</div>
+                        <div class="faq-answer">24시간 전화 상담(010-1234-5678) 또는 홈페이지 실시간 채팅을 통해 예약 가능합니다. 첫 방문 고객은 사전 예약 필수.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">프라이버시는 어떻게 보호되나요?</div>
+                        <div class="faq-answer">모든 공간은 1인 또는 소규모 전용 프라이빗 룸으로 운영됩니다. CCTV 녹화 없음, 출입 기록 철저 관리, VIP 전용 출입구 별도 운영.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>마포 성우이벤트 | 강남 셔츠룸 프리미엄 시스템 도입 | 24시간 상담 <a href="tel:01012345678">010-1234-5678</a></p>
+            <p style="margin-top: 0.5rem;">서울특별시 마포구 | 사업자등록번호: 123-45-67890 | 모든 서비스는 성인 대상입니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('navList');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
